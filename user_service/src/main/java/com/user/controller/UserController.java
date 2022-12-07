@@ -30,7 +30,7 @@ public class UserController {
 		
 	//http://localhost:9002/contact/user/121
 		
-	List contacts = this.restTemplate.getForObject("http://localhost:9002/contact/user/"+user.getUserId(), List.class);
+	List contacts = this.restTemplate.getForObject("http://CONTACT-SERVICE/contact/user/"+user.getUserId(), List.class);
 		
 	user.setContacts(contacts);
 	
