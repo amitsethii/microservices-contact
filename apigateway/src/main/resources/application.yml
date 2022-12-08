@@ -16,11 +16,11 @@ spring:
     gateway:
       routes:
       - id: user_service
-        uri: lb://user_service
+        uri: lb://user-service
         predicates:
         - path=/user/**
       - id: constact_service
-        uri: lb://constact_service
+        uri: lb://constact-service
         predicates:
         - path=/contact/**
  
