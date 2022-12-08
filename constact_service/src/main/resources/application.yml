@@ -3,7 +3,7 @@ server:
   
 spring:
   application:
-    name: contact-service
+    name: constact_service
   
 eureka:
   instance:
